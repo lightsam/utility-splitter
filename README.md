@@ -10,6 +10,18 @@ Run `nvm use 8.11.2`
 
 Run `ng serve --open` for a dev server. Browser will automatically navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Deploy to Github
+
+https://angular.io/guide/deployment
+
+`ng build --prod --output-path docs --base-href utility-splitter`
+
+When the build is complete, make a copy of docs/index.html and name it docs/404.html.
+
+Commit change and push.
+
+The deployed page will be at https://lightsam.github.io/utility-splitter/
+
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
