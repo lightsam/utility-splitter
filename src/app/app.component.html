@@ -108,14 +108,14 @@
 <button *ngIf="!hideButtons" (click)="addCharge(sewerGargageStr)">Add {{sewerGargageStr}}</button>
 
 
-<p>As I mentioned in a previous email, we also got credit.</p>
-<p>Electric Delivery Climate Credit {{electricCredit.amountStr}}. The credit is received twice a year. See EnergyUpgradeCA.org/credit.
+<p>We also got credit.</p>
+<p>Electric Delivery Climate Credit {{electricCredit.amountStr}}. The credit is received twice a year, in Aprils and Octobers. See EnergyUpgradeCA.org/credit.
   I'm distributing the credit to each day. The more one pays the bill, the more he gets the credit.
 </p>
 <div *ngFor="let person of people">
   {{person.name}} {{personElectricCredit(person).str}}
 </div>
-<p>Gas Climate Credit {{gasCredit.amountStr}}. The credit is received once a year. See EnergyUpgradeCA.org/credit.
+<p>Gas Climate Credit {{gasCredit.amountStr}}. The credit is received once a year, in Aprils. See EnergyUpgradeCA.org/credit.
   I'm distributing the credit to each day. The more one pays the bill, the more he gets the credit.
 </p>
 <div *ngFor="let person of people">
