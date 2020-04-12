@@ -1,4 +1,3 @@
-import * as moment from 'moment';
 import { Charge } from './charge';
 import { Equation } from './equation';
 import { InternetMap } from './internet-map';

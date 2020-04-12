@@ -1,5 +1,7 @@
 # utility-splitter
 
+To resolve `Can't resolve 'moment' in '/Users/yliu/utility-splitter/src/app`, Run `npm install moment --save`
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
 ## Development server
