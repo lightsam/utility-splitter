@@ -28,8 +28,8 @@ export class AppComponent {
   charges: Charge[] = [
     new Charge(0, this.year, this.electricDeliveryStr, '')
   ];
-  electricCredit: Charge = new Charge(0, this.year, this.electricCreditStr, '-36.44');
-  gasCredit: Charge = new Charge(0, this.year, this.gasCreditStr, '-27.72');
+  electricCredit: Charge = new Charge(0, this.year, this.electricCreditStr, '-35.73');
+  gasCredit: Charge = new Charge(0, this.year, this.gasCreditStr, '-27.18');
 
   private addPerson(): void {
     this.people.push(new Person(this.people.length, this.year, ''));
