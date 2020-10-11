@@ -5,11 +5,11 @@
   <span *ngIf="!hideYears">Year:<input *ngIf="!hideYears" [(ngModel)]="year" size="4"/></span>
 </div>
 <div *ngFor="let person of people">
-  <div *ngIf="!person.isGuest && (!hideButtons || person.name !== 'Yutao')">
-    <div>{{person.name}}<span *ngIf="person.guests.length > 0"> and his guest(s)</span> amount due is {{personWithGuestsTotalAmount(person).result.toFixed(2)}}</div>
+  <div *ngIf="!person.isGuest ">
+    <div>{{person.name}}<span *ngIf="person.guests.length > 0"> and his guest(s)</span>'s portion is {{personWithGuestsTotalAmount(person).result.toFixed(2)}}</div>
   </div>
-</div><p>Please pay on or before <input placeholder="due date"/>. Please correct me if I made any mistakes in the calculation.</p>
-<p>You can stop reading here if you are not interested in how I calculated your amount due.</p>
+</div><p>Please correct me if I made any mistakes in the calculation.</p>
+<p>You can stop here if you are not interested in how I calculated your portion.</p>
 
 
 <p>{{people.length}} people/visits are involved.<button *ngIf="!hideButtons" (click)="addPerson()">Add a person</button></p>
@@ -66,7 +66,7 @@
   there were {{internetMap.people.length}} people ({{internetMap.peopleNameStr()}}) in the house.
 </div>
 <div *ngFor="let person of people">
-  {{person.name}} should pay {{internetCharge.personCharge(person).str}}
+  {{person.name}}'s portion is {{internetCharge.personCharge(person).str}}
 </div>
 
 
@@ -97,7 +97,7 @@
   </div>
   <div>Total days {{totalDays(charge)}}</div>
   <div *ngFor="let person of people">
-    <div *ngIf="person.hasOverlap(charge)">{{person.name}} should pay {{charge.amountStr}} / {{totalDays(charge)}} * {{person.overlapInDays(charge)}} = {{person.payForCharge(charge, totalDays(charge)).toFixed(2)}}</div>
+    <div *ngIf="person.hasOverlap(charge)">{{person.name}}'s portion is {{charge.amountStr}} / {{totalDays(charge)}} * {{person.overlapInDays(charge)}} = {{person.payForCharge(charge, totalDays(charge)).toFixed(2)}}</div>
   </div>
   <br>
 </div>
@@ -132,10 +132,10 @@
 
 <p>Now sum the numbers up.</p>
 <div *ngFor="let person of people">
-  <div *ngIf="!person.isGuest && (!hideButtons || person.name !== 'Yutao')">
-    <div>{{person.name}}'s amount due is {{personTotalAmount(person).str}}</div>
-    <div *ngFor="let guest of person.guests">{{guest.name}}'s amount due is {{personTotalAmount(guest).str}}</div>
-    <div *ngIf="person.guests.length > 0">{{person.name}}<span *ngIf="person.guests.length > 0"> and his guest(s)</span> amount due is {{personWithGuestsTotalAmount(person).str}}</div>
+  <div *ngIf="!person.isGuest">
+    <div>{{person.name}}'s portion is {{personTotalAmount(person).str}}</div>
+    <div *ngFor="let guest of person.guests">{{guest.name}}'s portion is {{personTotalAmount(guest).str}}</div>
+    <div *ngIf="person.guests.length > 0">{{person.name}}<span *ngIf="person.guests.length > 0"> and his guest(s)</span>'s portion is {{personWithGuestsTotalAmount(person).str}}</div>
   </div>
 </div>
 
