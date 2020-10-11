@@ -18,6 +18,8 @@ https://angular.io/guide/deployment
 
 When the build is complete, make a copy of docs/index.html and name it docs/404.html.
 
+Remember to do git status and git add the untracked files.
+
 Commit change and push.
 
 The deployed page will be at https://lightsam.github.io/utility-splitter/
