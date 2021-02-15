@@ -20,11 +20,11 @@ export class AppComponent {
   gasCreditStr = 'Gas Climate Credit';
   hideButtons = false;
   hideYears = false;
-  year = 2020;
+  year = 2021;
   people: Person[] = [
     new Person(0, this.year, 'Yutao')
   ];
-  internetCharge = new InternetCharge(0, this.year, this.internetStr, '44.99');
+  internetCharge = new InternetCharge(0, this.year, this.internetStr, '40.00');
   charges: Charge[] = [
     new Charge(0, this.year, this.electricDeliveryStr, '')
   ];

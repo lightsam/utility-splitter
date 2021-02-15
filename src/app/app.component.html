@@ -89,7 +89,7 @@
       /
       <input [(ngModel)]="charge.dateRange.endYear" size="4"/>
     </span>
-    $<input [(ngModel)]="charge.amountStr" size="5"/>(<input type="text" placeholder="add note" size="30">)
+    $<input [(ngModel)]="charge.amountStr" size="5"/>(<input type="text" placeholder="add note" size="40">)
     <button *ngIf="!hideButtons" (click)="deleteCharge(charge.index)">Delete</button>
   </div>
   <div *ngFor="let person of people">
@@ -115,9 +115,9 @@
   likely to result due to the Governor's March 19, 2020 stay-at-home order and provide residential customers increased
   opportunity to invest in energy-savings products (www.cpuc.ca.gov/climatecredit/)
   In April 2020, credit {{electricCredit.amountStr}} was received.
-  In May 2020, credit -17.87 will be received.
-  In June 2020, credit -17.86 will be received.
-  In October 2020, no credit will be received.
+  In May 2020, credit -17.87 was received.
+  In June 2020, credit -17.86 was received.
+  In October 2020, no credit was received.
   I'm distributing the credit to each day. The more one pays the bill, the more he gets the credit.
 </p>
 <div *ngFor="let person of people">
