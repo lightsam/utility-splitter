@@ -110,20 +110,15 @@
 
 <p>We also got credit.</p>
 <p>Electric Delivery Climate Credit. The credit is received twice a year, in Aprils and Octobers.
-  See EnergyUpgradeCA.org/credit.
-  The credit might arrive early this year to mitigate the effects of increased residential electric bills that are
-  likely to result due to the Governor's March 19, 2020 stay-at-home order and provide residential customers increased
-  opportunity to invest in energy-savings products (www.cpuc.ca.gov/climatecredit/)
-  In April 2020, credit {{electricCredit.amountStr}} was received.
-  In May 2020, credit -17.87 was received.
-  In June 2020, credit -17.86 was received.
-  In October 2020, no credit was received.
-  I'm distributing the credit to each day. The more one pays the bill, the more he gets the credit.
+  See www.cpuc.ca.gov/climatecredit.
+  In April 2021, credit is {{electricCredit.amountStr}}.
+  In October 2021, credit is {{electricCredit.amountStr}}.
+  I'm distributing the credit to each day. The more a person pays the bill, the more the person gets the credit.
 </p>
 <div *ngFor="let person of people">
   {{person.name}} {{personElectricCredit(person).str}}
 </div>
-<p>Gas Climate Credit {{gasCredit.amountStr}}. The credit is received once a year, in Aprils. See EnergyUpgradeCA.org/credit.
+<p>Gas Climate Credit {{gasCredit.amountStr}}. The credit is received once a year, in Aprils. See www.cpuc.ca.gov/climatecredit.
   I'm distributing the credit to each day. The more one pays the bill, the more he gets the credit.
 </p>
 <div *ngFor="let person of people">
