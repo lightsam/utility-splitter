@@ -24,7 +24,7 @@ export class AppComponent {
   people: Person[] = [
     new Person(0, this.year, 'Yutao')
   ];
-  internetCharge = new InternetCharge(0, this.year, this.internetStr, '40.00');
+  internetCharge = new InternetCharge(0, this.year, this.internetStr, '30.00');
   charges: Charge[] = [
     new Charge(0, this.year, this.electricDeliveryStr, '')
   ];
