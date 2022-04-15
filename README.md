@@ -6,7 +6,7 @@ To resolve `Can't resolve 'moment' in '/Users/yliu/utility-splitter/src/app`, Ru
 
 ## Development server
 
-Run `nvm use 8.11.2`
+Run `nvm use 16.10.0`
 
 Run `ng serve --open` for a dev server. Browser will automatically navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 

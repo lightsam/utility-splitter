@@ -20,7 +20,7 @@ export class AppComponent {
   gasCreditStr = 'Gas Climate Credit';
   hideButtons = false;
   hideYears = false;
-  year = 2021;
+  year = 2022;
   people: Person[] = [
     new Person(0, this.year, 'Yutao')
   ];
@@ -28,8 +28,8 @@ export class AppComponent {
   charges: Charge[] = [
     new Charge(0, this.year, this.electricDeliveryStr, '')
   ];
-  electricCredit: Charge = new Charge(0, this.year, this.electricCreditStr, '-17.54');
-  gasCredit: Charge = new Charge(0, this.year, this.gasCreditStr, '-25.11');
+  electricCredit: Charge = new Charge(0, this.year, this.electricCreditStr, '-39.30');
+  gasCredit: Charge = new Charge(0, this.year, this.gasCreditStr, '-47.83');
 
   private addPerson(): void {
     this.people.push(new Person(this.people.length, this.year, ''));
